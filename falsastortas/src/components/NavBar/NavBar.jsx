@@ -1,9 +1,10 @@
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import CartWidget from "../CartWidget/CartWidget";
+import "../../App.css";
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar className="ft-amarillo" collapseOnSelect>
       <Container>
         <Navbar.Brand href="#home">Falsas Tortas</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -11,7 +12,7 @@ const NavBar = () => {
           <Nav className="me-auto">
             <Nav.Link href="#productos">Productos</Nav.Link>
             <Nav.Link href="#pedidos">Pedidos</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -21,7 +22,7 @@ const NavBar = () => {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
           <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>

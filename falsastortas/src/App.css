@@ -1,3 +1,18 @@
+.ft-amarillo{
+  background-color: #fdffb6;
+}
+
+.ft-rojo{
+  color: #e71e26;
+}
+
+.ft-verde{
+  color: #00a563;
+}
+
+
+
+
 .App {
   text-align: center;
 }
